@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampath | Video Editor Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:#111;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:0.9rem;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4e50;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: radial-gradient(circle at center, #1c1c1c 0%, #0f0f0f 80%);
+}
+
+.hero h1{
+    font-size:3rem;
+    background: linear-gradient(90deg,#ff4e50,#f9d423);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#ccc;
+    font-size:1.1rem;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ff4e50,#f9d423);
+    color:black;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#f9d423;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    color:#bbb;
+}
+
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill{
+    background:#1c1c1c;
+    padding:15px 25px;
+    border-radius:30px;
+    border:1px solid #ff4e50;
+}
+
+.projects-container,
+.services-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.project,
+.service{
+    background:#1a1a1a;
+    padding:25px;
+    width:300px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover,
+.service:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,78,80,0.5);
+}
+
+.affordable{
+    margin-top:15px;
+    color:#f9d423;
+    font-weight:600;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#888;
+}
+
+@media(max-width:768px){
+    nav{
+        padding:15px 20px;
+    }
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>Sampath</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Sampath</h1>
+    <p>Video Editor | Speed Ramps | Cinematic Intros | Future VFX Designer</p>
+    <button class="btn">View My Work</button>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I create cinematic, smooth and engaging video edits with strong storytelling and modern visual style. 
+        My mission is to deliver high-quality content while keeping services affordable for creators and clients.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill">Speed Ramping</div>
+        <div class="skill">Cinematic Editing</div>
+        <div class="skill">Color Grading</div>
+        <div class="skill">Motion Effects</div>
+        <div class="skill">Beat Sync Editing</div>
+        <div class="skill">Basic VFX</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project">
+            <h3>Temple Inauguration Video</h3>
+            <p>Cinematic intro with emotional music sync and professional color grading.</p>
+        </div>
+        <div class="project">
+            <h3>Instagram Reel Edits</h3>
+            <p>Trend-based edits with smooth speed ramps and dynamic transitions.</p>
+        </div>
+        <div class="project">
+            <h3>Event Highlight Video</h3>
+            <p>Professional storytelling with engaging pacing and sound design.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+        <div class="service">
+            <h3>Speed Ramp Editing</h3>
+            <p>Smooth slow-motion to fast transitions with cinematic enhancement.</p>
+            <div class="affordable">✔ Affordable & Flexible Pricing</div>
+        </div>
+        <div class="service">
+            <h3>Cinematic Intro (1-2 mins)</h3>
+            <p>Professional intro sequence with titles, music sync and basic VFX.</p>
+            <div class="affordable">✔ Affordable for Students & Creators</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sampathdadi0921@gmail.com</p>
+    <p>Instagram: @sammuh_09</p>
+</section>
+
+<footer>
+    © 2026 Sampath | Video Editor Portfolio
+</footer>
+
+</body>
+</html>
